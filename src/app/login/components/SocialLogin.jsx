@@ -20,12 +20,12 @@ export default function SocialLogin() {
   };
   return (
     <div className="flex justify-center gap-8">
-      <p
+      <button
         onClick={() => handleSocialLogin("google")}
-        className="bg-slate-200 rounded-full p-3"
+        className="bg-black text-white w-full flex justify-center px-4 py-4 rounded-full p-3"
       >
         <FaGoogle type="button" />
-      </p>
+      </button>
       
     </div>
   );

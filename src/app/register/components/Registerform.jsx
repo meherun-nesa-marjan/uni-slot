@@ -51,10 +51,11 @@ export default function Registerform() {
       />
       <button
         type="submit"
-        className="w-full bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+        className="w-full bg-black text-white px-4 py-2 rounded-full hover:bg-green-700"
       >
         Register
       </button>
+       <SocialLogin></SocialLogin>
        <p className="text-center">
         Already Have an account?{" "}
         <Link href="/login" className="text-orange-500 font-bold">
@@ -62,7 +63,7 @@ export default function Registerform() {
         </Link>
 
       </p>
-      <SocialLogin></SocialLogin>
+     
     </form>
   );
 }

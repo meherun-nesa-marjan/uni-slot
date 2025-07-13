@@ -54,7 +54,7 @@ export default function ReviewForm({ userName, email, collegeName }) {
           ))}
         </select>
       </div>
-      <button className="btn btn-primary mt-2">Submit Review</button>
+      <button className="btn bg-red-600 px-5 py-3 mt-2">Submit Review</button>
     </form>
   );
 }
