@@ -27,10 +27,13 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextAuth>
-        <Navbar></Navbar>
-        <Toaster position="top-right" />
-        {children}
-        <Footer></Footer>
+          <Navbar></Navbar>
+          <Toaster position="top-right" />
+          <div style={{ minHeight: "calc(100vh - 117px)" }}>
+            {children}
+          </div>
+
+          <Footer></Footer>
         </NextAuth>
       </body>
     </html>
